@@ -1,0 +1,10 @@
+removendo cores e imagens se for inprimir a  pagina
+
+paso 1
+copia o css completo e remove o que for nesecario
+
+paso 2
+link no html coloca no final media="print"
+
+paso 3
+não esquesendo de colocar no css principal media="screen" no final do link do css
