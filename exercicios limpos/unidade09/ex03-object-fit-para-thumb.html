@@ -19,7 +19,7 @@
 
         header img {
             width: 100%;
-            height: 100%;
+            height: 90%;
 
             object-fit: cover;
             object-position: top center
@@ -39,18 +39,49 @@
             min-width: 320px;
             margin: 100px auto;
 
-            /* temp */
-            height: 500px;
-            background-color: aqua;
 
         }
 
         .box {
-            height: 400px;
             width: 30%;
-            background-color: #f50d0d;
             margin: 10px;
+            border: solid 1px #ab9696;
+            border-radius: 10px;
+            background-color: aliceblue;
         }
+
+        .box img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: top center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        .box h3 {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .box p,
+        a {
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        a {
+            display: block;
+            background-color: forestgreen;
+            text-decoration: none;
+            color: wheat;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
 
         .es {
             margin-left: 5%;
@@ -67,14 +98,28 @@
 
 
         /* para mobile */
-        @media only screen and (min-width:320px) and (max-width:414px) {
+        @media only screen and (min-width:280px) and (max-width:414px) {
             header {
                 height: 320px;
+            }
+
+            .apresentacao {
+
+                width: 100%;
+                display: block;
+            }
+
+            .box,
+            .es,
+            .di {
+                width: 90%;
+                display: block;
+                margin: 15px auto;
             }
         }
 
         /* desktop grande */
-        @media only screen and (min-width:1367px) and (max-width:1980px) {
+        @media only screen and (min-width:280px) and (max-width:414px) {
             header {
                 height: 800px;
             }
@@ -97,9 +142,42 @@
     <main>
 
         <section class="apresentacao">
-            <section class="box">a</section>
-            <section class="box es">s</section>
-            <section class="box di">c</section>
+            <section class="box">
+                <img src="./_img/pizza1.jpg" alt="">
+                <h3>pezza 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                    eius. Dicta, quod repellat. Molestiae placeat exercitationem laudantium?
+
+                </p>
+                <a href=""> apenas R$ 30.00</a>
+
+            </section>
+
+
+
+            <section class="box es">
+                <img src="./_img/pizza2.jpg" alt="">
+                <h3>pezza 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                    eius. Dicta, quod repellat. Molestiae placeat exercitationem laudantium?
+
+                </p>
+                <a href=""> apenas R$ 30.00</a>
+
+            </section>
+
+            <section class="box di">
+                <img src="./_img/pizza3.jpg" alt="">
+                <h3>pezza 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                    eius. Dicta, quod repellat. Molestiae placeat exercitationem laudantium?
+
+                </p>
+                <a href=""> apenas R$ 30.00</a>
+            </section>
 
         </section>
 
